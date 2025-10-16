@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi Sitio Web Básico</title>
+    <style>
+        /* Estilos CSS para el diseño de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenido HTML -->
+    <header>
+        <h1>Bienvenido a Mi Sitio Web</h1>
+        <p>Este es un sitio web básico de ejemplo</p>
+    </header>
+
+    <main>
+        <h2>Contenido Principal</h2>
+        <p>Haz clic en el botón para ver una acción en JavaScript.</p>
+        <button onclick="mostrarMensaje()">Haz clic aquí</button>
+        <p id="mensaje"></p>
+    </main>
+
+    <footer>
+        <p>© 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para la interacción -->
+    <script>
+        function mostrarMensaje() {
+            document.getElementById("mensaje").innerText = "¡Has hecho clic en el botón!";
+        }
+    </script>
+
+</body>
+</html>
